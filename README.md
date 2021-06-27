@@ -30,6 +30,9 @@ luma OLED
 NOOBS
 SD Card Formatter
 Thonny
-VNC Viewer/ realVNC
+VNC Viewer(PuTTY)/ realVNC
 google aiy projects
 电路规划fritzing
+手机操控树莓派bluedot
+镜像烧录Etcher
+机器人系统ROS(在ubuntu Mate上装)

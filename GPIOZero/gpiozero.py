@@ -51,11 +51,12 @@ graph = LEDBarGraph(5,6,13,19,26,20,pwm=True)
 graph.value = 1/2 # 0全灭、-1全亮、-1/2左灭右亮、1/2左亮右灭
 
 # 按钮
+led = LED(16)
 button = Button(2)
 button.is_pressed  # 是否按下
 button.wait_for_press() # 按下后才继续执行
-button.when_pressed = xxFunc # 按下按钮
-button.when_released = xxFunc # 松开按钮
+button.when_pressed = led.on # 按下按钮
+button.when_released = led.off # 松开按钮
 button.pin.number # 按钮的针脚
 
 # 红绿灯
@@ -82,10 +83,11 @@ b.play(220.0)
 b.play(60)
 
 # 距离传感器
+led = LED(16)
 sensor = DistanceSensor(23,24,max_distance=1,threshold_distance=0.2)
 sensor.distance
-sensor.when_in_range = xxFunc
-sensor.when_out_of_range = xxFunc
+sensor.when_in_range = led.on
+sensor.when_out_of_range = led.off
 
 # 可变电阻器+模数转换器MCP3008 -> 调节发光二极管条
 graph2 = LEDBarGraph(5,6,13,19,26,20,pwm=True)

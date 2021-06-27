@@ -1,0 +1,20 @@
+命令行检测
+# 检测CPU/内存/进程/Load Average平均负载(=1满载，<1空闲)
+htop
+
+# 查看磁盘剩余空间
+df -h
+
+# 查看实时网速
+jnettop
+
+# 查看磁盘实时读写速率
+iotop
+
+# 查看后台运行程序
+tmux
+tmux attach
+
+苹果手机监控PiHelper
+安卓手机监控RaspController
+
